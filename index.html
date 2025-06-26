@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Talha Muneer - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="hero">
-    <div class="hero-content">
+    <div class="hero-content animate">
       <h1>Hi, I'm <span>Talha Muneer</span></h1>
       <p>System Administrator | IT Graduate | Cloud & Virtualization Enthusiast</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </div>
 
-  <section class="about">
+  <section class="about animate">
     <h2>About Me</h2>
     <p>Hello! I’m Talha, an IT professional passionate about system administration, virtualization, and network security. I enjoy working with technologies like VMware, Windows Server, Zimbra, and Linux. I'm currently pursuing my Master's in Computer Science.</p>
   </section>
 
-  <section class="projects" id="projects">
+  <section class="projects animate" id="projects">
     <h2>Projects</h2>
 
     <div class="project">
@@ -40,19 +44,38 @@
     </div>
   </section>
 
-  <section class="resume">
+  <section class="resume animate">
     <h2>Resume</h2>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
+    <a href="resume.pdf" class="btn" download><i class="fas fa-download"></i> Download Resume</a>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: talhamuneer258@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/talhamuneer" target="_blank">linkedin.com/in/talhamuneer</a></p>
+  <section class="contact animate">
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> Email: talha@example.com</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/talhamuneer" target="_blank">LinkedIn Profile</a></p>
+    <form action="https://formsubmit.co/talha@example.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
-  <footer>
+  <footer class="animate">
     <p>&copy; 2025 Talha Muneer</p>
   </footer>
+
+  <script>
+    const anims = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    anims.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
