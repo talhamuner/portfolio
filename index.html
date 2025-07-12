@@ -5,135 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Talha Muneer - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Vertical Navigation -->
-  <nav class="sidebar">
-    <div class="profile-container">
-      <img src="profile.jpg" alt="Talha Muneer" class="profile-img">
-      <div class="nav-brand">Talha Muneer</div>
-    </div>
+  <nav class="navbar">
+    <div class="nav-brand">Talha Muneer</div>
     <ul class="nav-links">
-      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-      <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
-      <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
     </ul>
-    <div class="theme-toggle">
-      <i class="fas fa-moon"></i> Dark Mode
-    </div>
   </nav>
 
-  <main class="content">
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="animate-pop">Hello, I'm <span>Talha Muneer</span></h1>
-          <p class="subtitle animate-slide">System Administrator · IT Graduate · Virtualization Enthusiast</p>
-          <a href="#projects" class="btn primary animate-bounce">Explore My Work <i class="fas fa-arrow-down"></i></a>
-        </div>
-        <div class="hero-image">
-          <img src="hero-profile.png" alt="Talha Muneer" class="floating">
-        </div>
-      </div>
-    </section>
+  <header class="hero">
+    <div class="container">
+      <h1>Hello, I'm <span>Talha Muneer</span></h1>
+      <p class="subtitle">System Administrator · IT Graduate · Virtualization Enthusiast</p>
+      <a href="#projects" class="btn primary">Explore My Work</a>
+    </div>
+  </header>
 
-    <section id="about" class="about animate-fade">
-      <div class="section-header">
-        <h2><i class="fas fa-user"></i> About Me</h2>
-      </div>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="about-profile.jpg" alt="Talha Muneer" class="profile-border">
-        </div>
-        <div class="about-text">
-          <p>I'm Talha, a passionate IT professional with hands-on experience in system administration, virtualization, and network security. I work with technologies like VMware, Windows Server, Zimbra, and Linux.</p>
-          <p>Currently pursuing my Master's in Computer Science, I'm always eager to explore new tech challenges and expand my expertise in enterprise infrastructure solutions.</p>
-          <div class="personal-info">
-            <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Islamabad, Pakistan</p>
-            <p><i class="fas fa-graduation-cap"></i> <strong>Education:</strong> MS Computer Science</p>
-            <p><i class="fas fa-briefcase"></i> <strong>Available:</strong> Full-time, Freelance</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="about" class="about animate">
+    <h2>About Me</h2>
+    <p>I’m Talha, a passionate IT professional with hands-on experience in system administration, virtualization, and network security. I work with technologies like VMware, Windows Server, Zimbra, and Linux. Currently, I’m pursuing a Master's in Computer Science and always eager to explore new tech challenges.</p>
+  </section>
 
-    <!-- Other sections (skills, projects, etc) go here with updated structure -->
-    <!-- Updated projects section example: -->
-    <section id="projects" class="projects animate-slide">
-      <div class="section-header">
-        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="card-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Intrusion Detection System (FYP)</h3>
-          <p>Final year university project implementing a network intrusion detection system using open-source tools.</p>
-          <div class="tech-tags">
-            <span>Snort</span>
-            <span>Wireshark</span>
-            <span>Linux</span>
-          </div>
-        </div>
-        <!-- Other project cards -->
-      </div>
-    </section>
-    
-    <!-- Floating Contact Button -->
-    <a href="#contact" class="float-contact">
-      <i class="fas fa-paper-plane"></i>
-    </a>
-  </main>
+  <section id="skills" class="skills animate">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill"><i class="fab fa-linux"></i> Linux</div>
+      <div class="skill"><i class="fab fa-windows"></i> Windows Server</div>
+      <div class="skill"><i class="fas fa-envelope"></i> Zimbra Mail</div>
+      <div class="skill"><i class="fas fa-network-wired"></i> Networking</div>
+      <div class="skill"><i class="fab fa-vmware"></i> VMware ESXi</div>
+      <div class="skill"><i class="fas fa-shield-alt"></i> Security</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects animate">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Intrusion Detection System (FYP)</h3>
+      <p>Final year university project implementing a network intrusion detection system using open-source tools.</p>
+    </div>
+    <div class="project">
+      <h3>Zimbra Mail Server Deployment</h3>
+      <p>Deployed and managed Zimbra mail server with backup, spam filtering, and domain integration.</p>
+    </div>
+    <div class="project">
+      <h3>Proxmox + VMware Lab</h3>
+      <p>Created a virtualized lab using VMware ESXi and Proxmox VE to simulate enterprise server environments.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume animate">
+    <h2>Resume</h2>
+    <a href="resume.pdf" class="btn" download><i class="fas fa-download"></i> Download Resume</a>
+  </section>
+
+  <section id="contact" class="contact animate">
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> Email: talha@example.com</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/talhamuneer" target="_blank">LinkedIn Profile</a></p>
+    <form action="https://formsubmit.co/talha@example.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <section id="blog" class="blog animate">
+    <h2>Blog</h2>
+    <div class="blog-post">
+      <h3>Setting Up Zimbra on Oracle Linux</h3>
+      <p>A guide I created to help system admins deploy Zimbra securely on Oracle Linux.</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Proxmox vs VMware: My Experience</h3>
+      <p>A quick comparison based on my hands-on lab testing for enterprise-grade hypervisors.</p>
+      <a href="#">Read More</a>
+    </div>
+  </section>
+
+  <footer class="animate">
+    <p>&copy; 2025 Talha Muneer</p>
+  </footer>
 
   <script>
-    // Intersection Observer for animations
     const anims = document.querySelectorAll('.animate');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+          entry.target.classList.add('fade-in');
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.1 });
 
     anims.forEach(el => observer.observe(el));
-
-    // Theme toggle
-    const themeToggle = document.querySelector('.theme-toggle');
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      themeToggle.querySelector('i').classList.toggle('fa-moon');
-      themeToggle.querySelector('i').classList.toggle('fa-sun');
-    });
-
-    // Active nav link highlighting
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if(pageYOffset >= sectionTop - 200) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if(link.getAttribute('href').substring(1) === current) {
-          link.classList.add('active');
-        }
-      });
-    });
   </script>
 </body>
 </html>
