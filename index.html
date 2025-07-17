@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talha Muneer – Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      background: #f9f9f9;
+      color: #333;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    aside {
+      width: 280px;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 30px 20px;
+      min-height: 100vh;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    aside h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #0dbf8d;
+    }
+
+    aside p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    aside ul {
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    aside ul li a {
+      color: #0dbf8d;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    aside ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .header h2 {
+      font-size: 28px;
+      color: #222;
+    }
+
+    .icons a {
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #0dbf8d;
+      transition: transform 0.3s ease;
+    }
+
+    .icons a:hover {
+      transform: scale(1.2);
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    section h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #0dbf8d;
+      position: relative;
+    }
+
+    .project, .job {
+      margin-bottom: 15px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .project:hover, .job:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-list span {
+      background: #e5fbf7;
+      color: #0a5e4a;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .skill-list span:hover {
+      background: #0dbf8d;
+      color: white;
+    }
+
+    .profile-pic {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <aside>
+    <img src="picture.jpg" alt="Talha Muneer" class="profile-pic" />
+    <h1>Talha Muneer</h1>
+    <p>Cybersecurity System Administrator</p>
+
+    <ul>
+      <li>Email: talhamuneer258@gmail.com</li>
+      <li>Phone: +92 320 6805269</li>
+      <li>Location: Rawalpindi, Pakistan</li>
+    </ul>
+
+    <h3 style="margin-top: 30px;">Links</h3>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/talhamuneer" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/talhamuner" target="_blank">GitHub</a></li>
+      <li><a href="resume.html" download>Download Resume</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="header">
+      <h2>Professional Portfolio</h2>
+      <div class="icons">
+        <a href="mailto:talhamuneer258@gmail.com" title="Email">📧</a>
+        <a href="https://www.linkedin.com/in/talhamuneer" title="LinkedIn" target="_blank">💼</a>
+        <a href="https://github.com/talhamuner" title="GitHub" target="_blank">💻</a>
+      </div>
+    </div>
+
+    <section>
+      <h3>About Me</h3>
+      <p>
+        Dynamic cybersecurity-focused system administrator with over 2 years of hands-on experience managing and securing IT environments...
+      </p>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <p><strong>Foundation University Islamabad</strong> – Master's in Computer Science (2024 – Present)</p>
+      <p><strong>MNS University of Agriculture Multan</strong> – Bachelor's in Computer Science (2019 – 2023)</p>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+      <div class="job">
+        <strong>System Administrator – CSD Head Office</strong><br/>
+        <em>Rawalpindi | Jun 2023 – Present</em><br/>
+        • Configured ADDS, DNS, DHCP, RAID, Proxmox, Zimbra, Wazuh, Nagios, etc.
+      </div>
+    </section>
+
+    <section>
+      <h3>Projects</h3>
+      <div class="project">
+        <strong>Wazuh SIEM Deployment</strong><br/>
+        • Real-time log analysis and threat detection via centralized SIEM system.<br/>
+      </div>
+      <div class="project">
+        <strong>Endpoint Security & Threat Detection</strong><br/>
+        • Sangfor EDR deployment, site-to-site VPN via pfSense, and cybersecurity training.
+      </div>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <div class="skill-list">
+        <span>Wazuh</span>
+        <span>VPN</span>
+        <span>Proxmox</span>
+        <span>VMware ESXi</span>
+        <span>PRTG</span>
+        <span>Linux (Red Hat/CentOS)</span>
+        <span>Kaspersky</span>
+        <span>NextCloud/OwnCloud</span>
+        <span>Nagios</span>
+        <span>EDR</span>
+        <span>Active Directory</span>
+        <span>SIEM</span>
+        <span>RAID/NAS</span>
+        <span>Zimbra Mail</span>
+        <span>Office 365</span>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
